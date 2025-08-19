@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --fonte-principal: "Inter", sans-serif;
+    --textos-bordas: #EAD7D7;
+    --botoes-links: #EA2A2A;
+    --fundos-sessoes: #171616;
+    --cor-fundo: #010101;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--textos-bordas);
+}
+
+.check-menu{
+    display: none;
+}
+
+.cabecalho{
+    background-color: var(--fundos-sessoes);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container-cabecalho{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    gap: 0.5em;
+}
+
+.lista-links{
+    line-height: 29px;
+    display: none;
+    text-align: center;
+    background-color: var(--fundos-sessoes);
+    width: 100%;
+    padding: 0 2em;
+    position: fixed;
+}
+
+.show-list{
+    display: block;
+}
+
+.lista-links li a{
+    color: var(--textos-bordas);
+}
+
+
+.img-fundo{
+    background-image: url('../assets/imagem_fundo_mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    width: 70%;
+    margin: 5% 15%;
+}
+
+.titles{
+    font-size: 2rem;
+}
+
+.botao{
+    color: var(--textos-bordas);
+    background-color: var(--botoes-links);
+    padding: 1em;
+    border-radius: 1em;
+    width: 40%;
+    transition: 0.3s;
+}
+
+
+.botao:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px #4e0404;
+}
+
+.botao:active{
+    background-color: #c50e0e;
+}
+
+.sessao{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-projeto{
+    background-color: var(--fundos-sessoes);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.item-projeto:hover{
+    transform: translateY(-20px);
+}
+
+.item-projeto div{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.lista-projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.img-projeto{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.link-detalhes{
+    color: var(--botoes-links);
+}
+
+.link-github{
+    border: 1px solid var(--botoes-links);
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--botoes-links);
+    transition: 0.3s;
+}
+
+.link-github:hover{
+    background-color: var(--botoes-links);
+    border: 1px solid var(--cor-fundo);
+    color: var(--textos-bordas);
+    transform: translateY(-10px);
+}
+
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.lista-tecnologias{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.tecnologia{
+    background-color: var(--fundos-sessoes);
+    padding: 1em;
+    line-height: 29px;
+    border-radius: 10px;
+}
