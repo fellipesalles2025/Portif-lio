@@ -9,12 +9,10 @@ const imagemMenu = document.querySelector('.img-menu')
 menu.addEventListener('change', () => {
     if(menu.checked){
         listaMenu.classList.add("show-list")
-        imagemMenu.src = "assets/close.svg"
         return
     }
 
     listaMenu.classList.remove("show-list")
-    imagemMenu.src = "assets/menu.svg"
 })
 
 
@@ -25,7 +23,6 @@ linksLista.forEach(link => {
     link.addEventListener('click', () => {
         menu.checked = false
         listaMenu.classList.remove('show-list')
-        imagemMenu.src = "assets/menu.svg"
     })
 })
 
@@ -33,15 +30,48 @@ linksLista.forEach(link => {
 
 
 //altera a imagem do link do github
-const logoGithub = document.querySelector("#git-red")
+const logoGithub1 = document.querySelector("#github1")
 
-const linkGithub = document.querySelector(".link-github")
+const logoGithub2 = document.querySelector('#github2')
 
-linkGithub.addEventListener('mouseover', () => {
-    logoGithub.src = "assets/icones_tecnologias/github_branco.svg"
-    logoGithub.style.width = '21px';
+const logoLinkedin = document.querySelector('#linkedin')
+
+
+const linkGithub1 = document.querySelector('#link_github1')
+
+const linkGithub2 = document.querySelector('#link_github2')
+
+const linkLinkedin = document.querySelector('#link_linkedin')
+
+//primeiro link do github
+linkGithub1.addEventListener('mouseover', () => {
+
+    logoGithub1.src = "assets/icones_tecnologias/github_branco_pequeno.svg"
 })
 
-linkGithub.addEventListener('mouseout', () => {
-    logoGithub.src = "assets/icones_tecnologias/github_vermelho.svg"
+linkGithub1.addEventListener('mouseout', () => {
+
+    logoGithub1.src = "assets/icones_tecnologias/github_vermelho.svg"
+})
+
+//segundo link do gihub
+linkGithub2.addEventListener('mouseover', () => {
+
+    logoGithub2.src = "assets/icones_tecnologias/github_branco_pequeno.svg"
+})
+
+linkGithub2.addEventListener('mouseout', () => {
+
+    logoGithub2.src = "assets/icones_tecnologias/github_vermelho.svg"
+})
+
+//link do linkedin
+linkLinkedin.addEventListener('mouseover', () => {
+
+    logoLinkedin.src = "assets/linkedin_branco.svg"
+})
+
+linkLinkedin.addEventListener('mouseout', () => {
+
+    logoLinkedin.src = "assets/linkedin_vermelho.svg"
 })

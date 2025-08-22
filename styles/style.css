@@ -150,20 +150,19 @@ body{
     text-decoration: underline;
 }
 
-.link-github{
-    border: 1px solid var(--botoes-links);
+.link-redes{
+    border: 2px solid var(--botoes-links);
     border-radius: 10px;
     padding: 1em 1.5em;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5em;
     color: var(--botoes-links);
     transition: 0.3s;
 }
 
-.link-github:hover{
+.link-redes:hover{
     background-color: var(--botoes-links);
-    border: 1px solid var(--cor-fundo);
     color: var(--textos-bordas);
     transform: translateY(-10px);
 }
@@ -220,4 +219,21 @@ body{
 
 .formacao h3{
     color: var(--botoes-links);
+}
+
+.rodape{
+    background-color: var(--fundos-sessoes);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-rodape{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.copy{
+    color: #787474;
 }

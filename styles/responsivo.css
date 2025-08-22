@@ -35,4 +35,8 @@
     .content-sobre{
         flex-direction: row-reverse;
     }
+
+    .links-rodape{
+        flex-direction: row;
+    }
 }
