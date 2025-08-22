@@ -11,7 +11,9 @@
 body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-principal);
+    font-weight: 400;
     color: var(--textos-bordas);
+    line-height: 29px;
 }
 
 .check-menu{
@@ -33,6 +35,13 @@ body{
     padding: 1.5em;
     gap: 0.5em;
 }
+
+.titulo-cabecalho{
+    font-size: 2rem;
+    color: var(--textos-bordas);
+    font-weight: 700;
+}
+
 
 .lista-links{
     line-height: 29px;
@@ -137,6 +146,10 @@ body{
     color: var(--botoes-links);
 }
 
+.link-detalhes:hover{
+    text-decoration: underline;
+}
+
 .link-github{
     border: 1px solid var(--botoes-links);
     border-radius: 10px;
@@ -171,6 +184,40 @@ body{
 .tecnologia{
     background-color: var(--fundos-sessoes);
     padding: 1em;
-    line-height: 29px;
     border-radius: 10px;
+}
+
+
+.content-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin: 5% 10%;
+    text-align: left;
+}
+
+.foto-perfil{
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid var(--botoes-links);
+    box-shadow: 5px 5px 5px #4e0404;
+}
+
+
+.formacao{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: left;
+}
+
+.formacao div{
+    background-color: var(--fundos-sessoes);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.formacao h3{
+    color: var(--botoes-links);
 }

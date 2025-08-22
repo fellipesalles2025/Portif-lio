@@ -21,15 +21,18 @@
     }
 
     .lista-links li a{
-        padding: 2em;
+        padding: 1.7em 2em;
     }
 
     .lista-links li a:hover{
         border-bottom: 2px solid var(--textos-bordas);
     }
     
-
     .lista-projetos{
         flex-direction: row;
+    }
+
+    .content-sobre{
+        flex-direction: row-reverse;
     }
 }
