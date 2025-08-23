@@ -2,10 +2,11 @@
 
 :root{
     --fonte-principal: "Inter", sans-serif;
-    --textos-bordas: #EAD7D7;
-    --botoes-links: #EA2A2A;
+    --textos-bordas: #fcf9f9;
+    --botoes-links: #f13636;
     --fundos-sessoes: #171616;
     --cor-fundo: #010101;
+    --sombras: #4e0404;
 }
 
 body{
@@ -94,12 +95,9 @@ body{
 
 .botao:hover{
     transform: translateY(-10px);
-    box-shadow: 5px 5px 5px #4e0404;
+    box-shadow: 5px 5px 5px var(--sombras);
 }
 
-.botao:active{
-    background-color: #c50e0e;
-}
 
 .sessao{
     min-height: 100vh;
@@ -205,7 +203,7 @@ body{
     width: 300px;
     border-radius: 15px;
     border: 2px solid var(--botoes-links);
-    box-shadow: 5px 5px 5px #4e0404;
+    box-shadow: 5px 5px 5px var(--sombras);
 }
 
 
