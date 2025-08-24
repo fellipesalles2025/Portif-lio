@@ -27,51 +27,33 @@ linksLista.forEach(link => {
 })
 
 
+const links = [
+  {
+    link: document.querySelector('#link_github1'),
+    logo: document.querySelector('#github1'),
+    imgNormal: 'assets/icones_tecnologias/github_vermelho.svg',
+    imgHover: 'assets/icones_tecnologias/github_branco_pequeno.svg'
+  },
+  {
+    link: document.querySelector('#link_github2'),
+    logo: document.querySelector('#github2'),
+    imgNormal: 'assets/icones_tecnologias/github_vermelho.svg',
+    imgHover: 'assets/icones_tecnologias/github_branco_pequeno.svg'
+  },
+  {
+    link: document.querySelector('#link_linkedin'),
+    logo: document.querySelector('#linkedin'),
+    imgNormal: 'assets/linkedin_vermelho.svg',
+    imgHover: 'assets/linkedin_branco.svg'
+  }
+];
 
-
-//altera a imagem do link do github
-const logoGithub1 = document.querySelector("#github1")
-
-const logoGithub2 = document.querySelector('#github2')
-
-const logoLinkedin = document.querySelector('#linkedin')
-
-
-const linkGithub1 = document.querySelector('#link_github1')
-
-const linkGithub2 = document.querySelector('#link_github2')
-
-const linkLinkedin = document.querySelector('#link_linkedin')
-
-//primeiro link do github
-linkGithub1.addEventListener('mouseover', () => {
-
-    logoGithub1.src = "assets/icones_tecnologias/github_branco_pequeno.svg"
-})
-
-linkGithub1.addEventListener('mouseout', () => {
-
-    logoGithub1.src = "assets/icones_tecnologias/github_vermelho.svg"
-})
-
-//segundo link do gihub
-linkGithub2.addEventListener('mouseover', () => {
-
-    logoGithub2.src = "assets/icones_tecnologias/github_branco_pequeno.svg"
-})
-
-linkGithub2.addEventListener('mouseout', () => {
-
-    logoGithub2.src = "assets/icones_tecnologias/github_vermelho.svg"
-})
-
-//link do linkedin
-linkLinkedin.addEventListener('mouseover', () => {
-
-    logoLinkedin.src = "assets/linkedin_branco.svg"
-})
-
-linkLinkedin.addEventListener('mouseout', () => {
-
-    logoLinkedin.src = "assets/linkedin_vermelho.svg"
-})
+// Adiciona os eventos para todos os links do array
+links.forEach(({ link, logo, imgNormal, imgHover }) => {
+  link.addEventListener('mouseover', () => {
+    logo.src = imgHover;
+  });
+  link.addEventListener('mouseout', () => {
+    logo.src = imgNormal;
+  });
+});
