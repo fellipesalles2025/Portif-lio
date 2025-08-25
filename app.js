@@ -7,12 +7,7 @@ const imagemMenu = document.querySelector('.img-menu')
 
 
 menu.addEventListener('change', () => {
-    if(menu.checked){
-        listaMenu.classList.add("show-list")
-        return
-    }
-
-    listaMenu.classList.remove("show-list")
+        listaMenu.classList.toggle("show-list")
 })
 
 
